@@ -49,7 +49,7 @@ const MarkdownRenderer = ({ content, className }: MarkdownRendererProps) => {
                         </li>
                     ),
                     // @ts-ignore
-                    code: ({ node, inline, className, children, ...props }) => {
+                    code: ({ inline, className, children, ...props }) => {
                         return !inline ? (
                             <pre className="bg-muted/50 p-3 rounded-lg mb-3 last:mb-0 overflow-x-auto">
                                 <code className={cn("text-sm", className)} {...props}>

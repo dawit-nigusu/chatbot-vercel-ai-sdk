@@ -3,11 +3,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowUpIcon, BarChart3Icon, FileTextIcon, LineChartIcon, CalculatorIcon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { chat } from "@/actions/chat";
 import { readStreamableValue } from "ai/rsc";
 import { cn } from "@/lib/utils";
-import MarkdownRenderer from "./markdown-renderer";
+import MarkdownRenderer from "@/components/markdown-renderer";
 
 const prompts = [
     {
